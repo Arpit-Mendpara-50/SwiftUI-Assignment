@@ -17,6 +17,10 @@ struct ContentView: View {
             VStack {
                 NavigationLink(destination: MapView(), isActive: $isViewActive) {
                     Text("Show Map View")
+                        .padding()
+                        .background(Color.accentColor)
+                        .foregroundColor(Color.init("ForegroundColor"))
+                        .cornerRadius(5.0)
                 }
                 .isDetailLink(false)
                 .navigationTitle("SwiftUI-Assignment")
