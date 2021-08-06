@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import Combine
+
+//MARK:- Store application state for jump to first page
+class ApplicationState: ObservableObject{
+    @Published var moveToHome: Bool = false
+}

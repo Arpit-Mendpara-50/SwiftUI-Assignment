@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//MARK:- Extension for convert hex string to hex color format
 extension Color {
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)

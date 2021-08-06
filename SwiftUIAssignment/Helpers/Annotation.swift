@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct MrkerJSONData: Decodable {
+//MARK:- Object mapper for markers API
+struct MarkerJSONData: Decodable {
     let markers: [Markers]
 }
 
@@ -20,10 +21,7 @@ struct Markers: Decodable, Identifiable {
     let color: String
 }
 
-struct LineJSONData1: Decodable {
+//MARK:- Object mapper for Polyline API
+struct LineJSONData: Decodable {
     let polyline: [[Double]]
-}
-
-struct Polyline: Decodable {
-    let coordintates: [Double]
 }
